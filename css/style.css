@@ -1,0 +1,211 @@
+/* Spice Garden - style.css */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #333;
+}
+
+/* so heading is not hidden under the navbar */
+section {
+  scroll-margin-top: 70px;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 40px;
+  font-weight: bold;
+  color: #3b2a1a;
+}
+
+.section-title::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background-color: #ffc107;
+  margin: 10px auto 0;
+}
+
+/* navbar */
+#mainNav {
+  background-color: transparent;
+  transition: background-color 0.3s;
+}
+
+/* class added by script.js on scroll */
+#mainNav.scrolled {
+  background-color: #3b2a1a;
+}
+
+@media (max-width: 991px) {
+  #mainNav {
+    background-color: #3b2a1a;
+  }
+}
+
+.navbar-brand {
+  font-size: 24px;
+  font-weight: bold;
+  color: #ffc107 !important;
+}
+
+.navbar-brand .logo {
+  height: 48px;
+  width: 48px;
+  border-radius: 50%;
+  background-color: #fff;
+  margin-right: 10px;
+}
+
+.nav-link:hover {
+  color: #ffc107 !important;
+}
+
+/* hero */
+.hero {
+  min-height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+              url("../images/restaurant-image.jpg") center / cover no-repeat;
+  background-color: #222;
+}
+
+.hero-small {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #ffc107;
+  margin-bottom: 5px;
+}
+
+.hero h1 {
+  font-size: 52px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.hero .lead {
+  margin-bottom: 30px;
+}
+
+@media (max-width: 576px) {
+  .hero h1 {
+    font-size: 34px;
+  }
+}
+
+/* about */
+.fact-box {
+  background-color: #fff3cd;
+  border-radius: 8px;
+  padding: 20px 5px;
+}
+
+.fact-box h3 {
+  color: #b35c00;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.fact-box p {
+  margin: 0;
+}
+
+/* menu */
+#menuTabs .nav-link {
+  color: #3b2a1a;
+  margin: 0 3px 6px;
+}
+
+#menuTabs .nav-link.active {
+  background-color: #ffc107;
+  color: #000;
+}
+
+.menu-photos img {
+  width: 100%;
+  height: 260px;
+  object-fit: contain;
+  background-color: #f1e6d3;
+  border-radius: 8px;
+}
+
+.menu-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px dashed #bbb;
+  font-size: 18px;
+}
+
+.menu-item span:last-child {
+  font-weight: bold;
+  color: #b35c00;
+  white-space: nowrap;
+  margin-left: 10px;
+}
+
+/* gallery */
+.gallery-box {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.gallery-box img {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.3s;
+}
+
+.gallery-box:hover img {
+  transform: scale(1.05);
+}
+
+.gallery-box p {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0;
+  padding: 6px;
+  text-align: center;
+  font-size: 14px;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.55);
+}
+
+/* reviews */
+.review-card {
+  background-color: #fff;
+  border-left: 4px solid #ffc107;
+  border-radius: 6px;
+  padding: 20px;
+  height: 100%;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.1);
+}
+
+.review-card p {
+  font-style: italic;
+}
+
+.review-card h6 {
+  margin: 0;
+  color: #b35c00;
+}
+
+/* reservation form */
+#reservationForm {
+  background-color: #fff;
+  padding: 25px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+footer {
+  background-color: #3b2a1a;
+}

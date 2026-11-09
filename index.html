@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spice Garden Restaurant</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" href="#home"><img src="images/logo.jpg" alt="Spice Garden logo" class="logo">Spice Garden</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuLinks">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menuLinks">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#menu">Menu</a></li>
+          <li class="nav-item"><a class="nav-link" href="#gallery">Our Dishes</a></li>
+          <li class="nav-item"><a class="nav-link" href="#reviews">Reviews</a></li>
+          <li class="nav-item"><a class="nav-link" href="#reservation">Reservation</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section id="home" class="hero d-flex align-items-center text-center text-white">
+    <div class="container">
+      <p class="hero-small">Family Restaurant</p>
+      <h1>Good Food, Good Mood</h1>
+      <p class="lead">Fresh North Indian and Chinese dishes, cooked daily in our own kitchen.</p>
+      <a href="#reservation" class="btn btn-warning btn-lg me-2">Book a Table</a>
+      <a href="#menu" class="btn btn-outline-light btn-lg">See Menu</a>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="py-5">
+    <div class="container">
+      <h2 class="section-title">About Us</h2>
+      <div class="row align-items-center">
+        <div class="col-md-6 mb-4 mb-md-0">
+          <p>Spice Garden started in 2012 as a small tea and snacks shop. Over the years, with the support of our regular customers, it has grown into a full family restaurant.</p>
+          <p>We use fresh vegetables, ground masalas and good quality oil. Nothing is kept for the next day. Whether you come for a quick lunch or a family dinner, we try to make sure you leave happy.</p>
+          <p class="mb-0"><strong>Open daily:</strong> 11:00 AM to 11:00 PM</p>
+        </div>
+        <div class="col-md-6">
+          <div class="row text-center g-3">
+            <div class="col-4"><div class="fact-box"><h3>12+</h3><p>Years</p></div></div>
+            <div class="col-4"><div class="fact-box"><h3>40+</h3><p>Dishes</p></div></div>
+            <div class="col-4"><div class="fact-box"><h3>5000+</h3><p>Customers</p></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Menu -->
+  <section id="menu" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="section-title">Our Menu</h2>
+
+      <ul class="nav nav-pills justify-content-center mb-4" id="menuTabs">
+        <li class="nav-item"><button class="nav-link active" data-bs-toggle="pill" data-bs-target="#starters">Starters</button></li>
+        <li class="nav-item"><button class="nav-link" data-bs-toggle="pill" data-bs-target="#main">Main Course</button></li>
+        <li class="nav-item"><button class="nav-link" data-bs-toggle="pill" data-bs-target="#rotis">Rotis</button></li>
+        <li class="nav-item"><button class="nav-link" data-bs-toggle="pill" data-bs-target="#rice">Rice & Noodles</button></li>
+        <li class="nav-item"><button class="nav-link" data-bs-toggle="pill" data-bs-target="#desserts">Desserts</button></li>
+        <li class="nav-item"><button class="nav-link" data-bs-toggle="pill" data-bs-target="#drinks">Drinks</button></li>
+      </ul>
+
+      <div class="tab-content">
+        <div class="tab-pane fade show active" id="starters">
+          <div class="row g-3 mb-4 menu-photos">
+            <div class="col-6"><img src="images/gallery/paneer-chilly.jpg" alt="Starters"></div>
+            <div class="col-6"><img src="images/gallery/paneer-65.jpg" alt="Starters"></div>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="menu-item"><span>Paneer Chilly</span><span>Rs. 200</span></div>
+              <div class="menu-item"><span>Paneer 65</span><span>Rs. 210</span></div>
+              <div class="menu-item"><span>Paneer Tikka</span><span>Rs. 220</span></div>
+              <div class="menu-item"><span>Paneer Malai Tikka</span><span>Rs. 240</span></div>
+              <div class="menu-item"><span>Paneer Pakoda</span><span>Rs. 160</span></div>
+              <div class="menu-item"><span>Paneer Hariyali Tikka</span><span>Rs. 230</span></div>
+              <div class="menu-item"><span>Veg Manchurian</span><span>Rs. 160</span></div>
+            </div>
+            <div class="col-md-6">
+              <div class="menu-item"><span>Crispy Corn</span><span>Rs. 150</span></div>
+              <div class="menu-item"><span>Hara Bhara Kebab</span><span>Rs. 170</span></div>
+              <div class="menu-item"><span>Veg Spring Roll</span><span>Rs. 140</span></div>
+              <div class="menu-item"><span>Honey Chilli Potato</span><span>Rs. 150</span></div>
+              <div class="menu-item"><span>Veg Crispy</span><span>Rs. 180</span></div>
+              <div class="menu-item"><span>Tomato Soup</span><span>Rs. 90</span></div>
+              <div class="menu-item"><span>Manchow Soup</span><span>Rs. 110</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="main">
+          <div class="row g-3 mb-4 menu-photos">
+            <div class="col-6"><img src="images/gallery/paneer-gravy.jpg" alt="Main Course"></div>
+            <div class="col-6"><img src="images/gallery/curry-rice.jpg" alt="Main Course"></div>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="menu-item"><span>Paneer Kadai</span><span>Rs. 260</span></div>
+              <div class="menu-item"><span>Paneer Tikka Masala</span><span>Rs. 270</span></div>
+              <div class="menu-item"><span>Paneer Butter Masala</span><span>Rs. 260</span></div>
+              <div class="menu-item"><span>Palak Paneer</span><span>Rs. 250</span></div>
+              <div class="menu-item"><span>Shahi Paneer</span><span>Rs. 270</span></div>
+              <div class="menu-item"><span>Paneer Lababdar</span><span>Rs. 270</span></div>
+              <div class="menu-item"><span>Matar Paneer</span><span>Rs. 240</span></div>
+            </div>
+            <div class="col-md-6">
+              <div class="menu-item"><span>Paneer Handi</span><span>Rs. 260</span></div>
+              <div class="menu-item"><span>Paneer Bhurji</span><span>Rs. 250</span></div>
+              <div class="menu-item"><span>Kaju Paneer Masala</span><span>Rs. 290</span></div>
+              <div class="menu-item"><span>Dal Tadka</span><span>Rs. 170</span></div>
+              <div class="menu-item"><span>Dal Fry</span><span>Rs. 160</span></div>
+              <div class="menu-item"><span>Mix Veg</span><span>Rs. 200</span></div>
+              <div class="menu-item"><span>Veg Kolhapuri</span><span>Rs. 220</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="rotis">
+          <div class="row g-3 mb-4 menu-photos">
+            <div class="col-6"><img src="images/gallery/naan-curry.jpg" alt="Rotis"></div>
+            <div class="col-6"><img src="images/gallery/parathas.jpg" alt="Rotis"></div>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="menu-item"><span>Tandoori Roti</span><span>Rs. 20</span></div>
+              <div class="menu-item"><span>Butter Roti</span><span>Rs. 25</span></div>
+              <div class="menu-item"><span>Naan</span><span>Rs. 40</span></div>
+              <div class="menu-item"><span>Butter Naan</span><span>Rs. 50</span></div>
+              <div class="menu-item"><span>Garlic Naan</span><span>Rs. 60</span></div>
+            </div>
+            <div class="col-md-6">
+              <div class="menu-item"><span>Butter Garlic Naan</span><span>Rs. 70</span></div>
+              <div class="menu-item"><span>Plain Paratha</span><span>Rs. 40</span></div>
+              <div class="menu-item"><span>Aloo Paratha</span><span>Rs. 70</span></div>
+              <div class="menu-item"><span>Laccha Paratha</span><span>Rs. 55</span></div>
+              <div class="menu-item"><span>Paneer Paratha</span><span>Rs. 90</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="rice">
+          <div class="row g-3 mb-4 menu-photos">
+            <div class="col-6"><img src="images/gallery/fried-rice.jpg" alt="Rice & Noodles"></div>
+            <div class="col-6"><img src="images/gallery/biryani.jpg" alt="Rice & Noodles"></div>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="menu-item"><span>Steamed Rice</span><span>Rs. 100</span></div>
+              <div class="menu-item"><span>Jeera Rice</span><span>Rs. 120</span></div>
+              <div class="menu-item"><span>Veg Fried Rice</span><span>Rs. 170</span></div>
+              <div class="menu-item"><span>Schezwan Fried Rice</span><span>Rs. 190</span></div>
+              <div class="menu-item"><span>Paneer Fried Rice</span><span>Rs. 200</span></div>
+              <div class="menu-item"><span>Veg Pulao</span><span>Rs. 180</span></div>
+            </div>
+            <div class="col-md-6">
+              <div class="menu-item"><span>Veg Biryani</span><span>Rs. 210</span></div>
+              <div class="menu-item"><span>Paneer Biryani</span><span>Rs. 240</span></div>
+              <div class="menu-item"><span>Dal Khichdi</span><span>Rs. 160</span></div>
+              <div class="menu-item"><span>Veg Hakka Noodles</span><span>Rs. 160</span></div>
+              <div class="menu-item"><span>Schezwan Noodles</span><span>Rs. 180</span></div>
+              <div class="menu-item"><span>Paneer Hakka Noodles</span><span>Rs. 190</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="desserts">
+          <div class="row g-3 mb-4 menu-photos">
+            <div class="col-4"><img src="images/gallery/brownie.jpg" alt="Desserts"></div>
+            <div class="col-4"><img src="images/gallery/cheesecake.jpg" alt="Desserts"></div>
+            <div class="col-4"><img src="images/gallery/pastry.jpg" alt="Desserts"></div>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="menu-item"><span>Sizzling Brownie</span><span>Rs. 180</span></div>
+              <div class="menu-item"><span>Cheesecake</span><span>Rs. 160</span></div>
+              <div class="menu-item"><span>Chocolate Milkshake</span><span>Rs. 130</span></div>
+              <div class="menu-item"><span>Strawberry Vanilla Milkshake</span><span>Rs. 140</span></div>
+              <div class="menu-item"><span>Gulab Jamun</span><span>Rs. 80</span></div>
+            </div>
+            <div class="col-md-6">
+              <div class="menu-item"><span>Ice Creams</span><span>Rs. 70</span></div>
+              <div class="menu-item"><span>Chocolate Pastry</span><span>Rs. 100</span></div>
+              <div class="menu-item"><span>Rasmalai</span><span>Rs. 100</span></div>
+              <div class="menu-item"><span>Jalebi</span><span>Rs. 90</span></div>
+              <div class="menu-item"><span>Kheer</span><span>Rs. 90</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="drinks">
+          <div class="row g-3 mb-4 menu-photos">
+            <div class="col-4"><img src="images/gallery/choc-shake.jpg" alt="Drinks"></div>
+            <div class="col-4"><img src="images/gallery/strawberry-shake.png" alt="Drinks"></div>
+            <div class="col-4"><img src="images/gallery/rose-shake.jpg" alt="Drinks"></div>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="menu-item"><span>Masala Chai</span><span>Rs. 30</span></div>
+              <div class="menu-item"><span>Cold Coffee</span><span>Rs. 110</span></div>
+              <div class="menu-item"><span>Fresh Lime Soda</span><span>Rs. 60</span></div>
+            </div>
+            <div class="col-md-6">
+              <div class="menu-item"><span>Sweet Lassi</span><span>Rs. 80</span></div>
+              <div class="menu-item"><span>Buttermilk</span><span>Rs. 40</span></div>
+              <div class="menu-item"><span>Mango Shake</span><span>Rs. 120</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section id="gallery" class="py-5">
+    <div class="container">
+      <h2 class="section-title">Our Dishes</h2>
+      <div class="row g-3">
+        <div class="col-6 col-md-4 col-lg-3"><div class="gallery-box"><img src="images/gallery/biryani.jpg" alt="Biryani"><p>Biryani</p></div></div>
+        <div class="col-6 col-md-4 col-lg-3"><div class="gallery-box"><img src="images/gallery/paneer-chilly.jpg" alt="Paneer Chilly"><p>Paneer Chilly</p></div></div>
+        <div class="col-6 col-md-4 col-lg-3"><div class="gallery-box"><img src="images/gallery/paneer-65.jpg" alt="Paneer 65"><p>Paneer 65</p></div></div>
+        <div class="col-6 col-md-4 col-lg-3"><div class="gallery-box"><img src="images/gallery/paneer-gravy.jpg" alt="Paneer Gravy with Garlic Naan"><p>Paneer Gravy with Garlic Naan</p></div></div>
+        <div class="col-6 col-md-4 col-lg-3"><div class="gallery-box"><img src="images/gallery/naan-curry.jpg" alt="Naan and Curry"><p>Naan and Curry</p></div></div>
+        <div class="col-6 col-md-4 col-lg-3"><div class="gallery-box"><img src="images/gallery/parathas.jpg" alt="Laccha Parathas"><p>Laccha Parathas</p></div></div>
+        <div class="col-6 col-md-4 col-lg-3"><div class="gallery-box"><img src="images/gallery/curry-rice.jpg" alt="Curry, Rice and Roti"><p>Curry, Rice and Roti</p></div></div>
+        <div class="col-6 col-md-4 col-lg-3"><div class="gallery-box"><img src="images/gallery/fried-rice.jpg" alt="Veg Fried Rice"><p>Veg Fried Rice</p></div></div>
+        <div class="col-6 col-md-4 col-lg-3"><div class="gallery-box"><img src="images/gallery/brownie.jpg" alt="Sizzling Brownie"><p>Sizzling Brownie</p></div></div>
+        <div class="col-6 col-md-4 col-lg-3"><div class="gallery-box"><img src="images/gallery/cheesecake.jpg" alt="Cheesecake"><p>Cheesecake</p></div></div>
+        <div class="col-6 col-md-4 col-lg-3"><div class="gallery-box"><img src="images/gallery/pastry.jpg" alt="Chocolate Pastry"><p>Chocolate Pastry</p></div></div>
+        <div class="col-6 col-md-4 col-lg-3"><div class="gallery-box"><img src="images/gallery/gulab-jamun.webp" alt="Gulab Jamun"><p>Gulab Jamun</p></div></div>
+        <div class="col-6 col-md-4 col-lg-3"><div class="gallery-box"><img src="images/gallery/icecream.jpg" alt="Ice Cream"><p>Ice Cream</p></div></div>
+        <div class="col-6 col-md-4 col-lg-3"><div class="gallery-box"><img src="images/gallery/choc-shake.jpg" alt="Chocolate Milkshake"><p>Chocolate Milkshake</p></div></div>
+        <div class="col-6 col-md-4 col-lg-3"><div class="gallery-box"><img src="images/gallery/strawberry-shake.png" alt="Strawberry Milkshake"><p>Strawberry Milkshake</p></div></div>
+        <div class="col-6 col-md-4 col-lg-3"><div class="gallery-box"><img src="images/gallery/rose-shake.jpg" alt="Rose Milkshake"><p>Rose Milkshake</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reviews -->
+  <section id="reviews" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="section-title">What Customers Say</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="review-card">
+            <p>"Very tasty food and the staff is polite. The paneer butter masala is my favourite."</p>
+            <h6>- Rahul Deshmukh</h6>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="review-card">
+            <p>"We celebrated my father's birthday here. Nice ambience and quick service."</p>
+            <h6>- Sneha Kulkarni</h6>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="review-card">
+            <p>"Good quality at a reasonable price. The biryani is a must try."</p>
+            <h6>- Amit Patil</h6>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reservation -->
+  <section id="reservation" class="py-5">
+    <div class="container">
+      <h2 class="section-title">Book a Table</h2>
+      <div class="row justify-content-center">
+        <div class="col-md-8 col-lg-6">
+          <div id="successMsg" class="alert alert-success d-none"></div>
+          <form id="reservationForm" novalidate>
+            <div class="mb-3">
+              <label for="name" class="form-label">Name</label>
+              <input type="text" class="form-control" id="name" required>
+              <div class="invalid-feedback">Please enter your name.</div>
+            </div>
+            <div class="mb-3">
+              <label for="phone" class="form-label">Phone Number</label>
+              <input type="tel" class="form-control" id="phone" required>
+              <div class="invalid-feedback">Enter a valid 10 digit phone number.</div>
+            </div>
+            <div class="row">
+              <div class="col-6 mb-3">
+                <label for="date" class="form-label">Date</label>
+                <input type="date" class="form-control" id="date" required>
+                <div class="invalid-feedback">Select a date.</div>
+              </div>
+              <div class="col-6 mb-3">
+                <label for="time" class="form-label">Time</label>
+                <input type="time" class="form-control" id="time" min="11:00" max="22:30" required>
+                <div class="invalid-feedback">Select time (11 AM - 10:30 PM).</div>
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="guests" class="form-label">Number of Guests</label>
+              <select class="form-select" id="guests" required>
+                <option value="">Select</option>
+                <option>1</option><option>2</option><option>3</option><option>4</option>
+                <option>5</option><option>6</option><option>7</option><option>8</option>
+              </select>
+              <div class="invalid-feedback">Please select number of guests.</div>
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">Special Request (optional)</label>
+              <textarea class="form-control" id="message" rows="3"></textarea>
+            </div>
+            <button type="submit" class="btn btn-warning w-100">Reserve Table</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="section-title">Contact Us</h2>
+      <div class="row text-center g-4">
+        <div class="col-md-4">
+          <h5>Address</h5>
+          <p>Rambaug Colony, Tulaja Bhavani Temple Road,<br>Off Paud Rd, near MIT College,<br>Kothrud, Pune, Maharashtra 411038</p>
+        </div>
+        <div class="col-md-4">
+          <h5>Phone</h5>
+          <p>+91 98765 43210<br>020 2345 6789</p>
+        </div>
+        <div class="col-md-4">
+          <h5>Timings</h5>
+          <p>Monday - Sunday<br>11:00 AM - 11:00 PM</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="text-center text-white py-3">
+    <p class="mb-0">Spice Garden Restaurant</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
